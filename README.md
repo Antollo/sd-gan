@@ -21,10 +21,10 @@ If you use SD-GAN in your research, please use the following BibTeX entry.
 
 ```
 @misc{nowinowski_improving_2026,
-	title = {Improving Generative Adversarial Networks with Self-Distillation},
-	author = {Nowinowski, Antoni and Krawiec, Krzysztof},
+    title = {Improving Generative Adversarial Networks with Self-Distillation},
+    author = {Nowinowski, Antoni and Krawiec, Krzysztof},
     url = {http://arxiv.org/abs/2605.08577},
     doi = {10.48550/arXiv.2605.08577},
-	year = {2026}
+    year = {2026}
 }
 ```
