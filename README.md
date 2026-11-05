@@ -9,11 +9,27 @@ Antoni Nowinowski · Krzysztof Krawiec
 
 ## Code and Resources
 
-The code and resources accompanying this paper will be made available in this repository.
+Source code for the evaluated GAN models is available as Git submodules in [`models/`](models/):
 
-- [ ] Source code for the evaluated GAN frameworks.
+- Projected GAN
+- StyleGAN2-ADA
+- StyleNAT
+- StyleGAN-XL
+
+Resource availability:
+
+- [x] Source code for the evaluated GAN frameworks.
 - [ ] Instructions for reproducing the experiments.
 - [ ] Pretrained model weights for selected checkpoints.
+
+### Getting Started
+
+Clone this repository together with its submodules:
+
+```bash
+git clone --recurse-submodules https://github.com/Antollo/sd-gan.git
+cd sd-gan
+```
 
 ## BibTeX
 
