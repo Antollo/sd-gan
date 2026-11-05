@@ -1,0 +1,12 @@
+[submodule "models/projected-gan"]
+	path = models/projected-gan
+	url = https://github.com/Antollo/projected-gan.git
+[submodule "models/stylegan2-ada-pytorch"]
+	path = models/stylegan2-ada-pytorch
+	url = https://github.com/Antollo/stylegan2-ada-pytorch.git
+[submodule "models/stylenat"]
+	path = models/stylenat
+	url = https://github.com/Antollo/StyleNAT.git
+[submodule "models/stylegan-xl"]
+	path = models/stylegan-xl
+	url = https://github.com/Antollo/stylegan-xl.git
