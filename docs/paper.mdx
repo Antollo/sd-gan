@@ -8,6 +8,7 @@ import Header from "./components/Header.astro";
 import HighlightedSection from "./components/HighlightedSection.astro";
 import Figure from "./components/Figure.astro";
 import Picture from "./components/Picture.astro";
+import TrainingEvolution from "./components/TrainingEvolution.astro";
 import diagram from "./assets/mdiagram.svg";
 
 <Header
@@ -54,6 +55,22 @@ $$
 $$
 
 where $\alpha$ controls the weight of the guidance provided by the EMA teacher.
+
+## Evolution of generated images during training
+
+How much does the image generated from a fixed latent vector $z$ change as training progresses? The animations below follow individual latent codes across ten training checkpoints, comparing each baseline with its self-distilled variant. These are the examples featured in the main paper (Fig. 7), including the sequences shown in the paper's appendix (Fig. 10). StyleGAN2-ADA and ProjectedGAN examples are selected independently for each method, neighboring baseline and SD images do not share a latent code.
+
+<TrainingEvolution model="StyleGAN2-ADA" dataset="FFHQ, 256 × 256" prefix="style_ffhq" baseline={[128, 249, 293]} distilled={[101, 355, 466]} />
+
+<TrainingEvolution model="StyleGAN2-ADA" dataset="LSUN Church, 256 × 256" prefix="style_church" baseline={[41, 414, 478]} distilled={[344, 436, 82]} />
+
+<TrainingEvolution model="ProjectedGAN" dataset="FFHQ, 256 × 256" prefix="proj_ffhq" baseline={[78, 259, 284]} distilled={[362, 432, 458]} />
+
+<TrainingEvolution model="ProjectedGAN" dataset="LSUN Church, 256 × 256" prefix="proj_church" baseline={[97, 141, 369]} distilled={[314, 451, 467]} />
+
+The StyleGAN-XL examples below show electric ray, hen, vulture, and axolotl classes in that order. Both variants start from the same pretrained 32 × 32 stem and continue training at 64 × 64, the baseline examples already exhibit substantial consistency.
+
+<TrainingEvolution model="StyleGAN-XL" dataset="ImageNet, 64 × 64" prefix="xl_imagenet" baseline={[173, 272, 762, 939]} distilled={[173, 272, 762, 939]} size={64} />
 
 ## BibTeX
 
