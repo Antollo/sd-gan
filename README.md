@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Improving Generative Adversarial Networks with Self-Distillation</h1>
+<h1>Self-Distilling Generative Adversarial Networks</h1>
 
 Antoni Nowinowski · Krzysztof Krawiec
 
@@ -36,8 +36,8 @@ cd sd-gan
 If you use SD-GAN in your research, please use the following BibTeX entry.
 
 ```
-@misc{nowinowski_improving_2026,
-    title = {Improving Generative Adversarial Networks with Self-Distillation},
+@misc{nowinowski_self_distilling_2026,
+    title = {Self-Distilling Generative Adversarial Networks},
     author = {Nowinowski, Antoni and Krawiec, Krzysztof},
     url = {http://arxiv.org/abs/2605.08577},
     doi = {10.48550/arXiv.2605.08577},
